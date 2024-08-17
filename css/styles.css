@@ -84,7 +84,6 @@ h1,h2,h3{
     .navegacion-principal {
         flex-direction: row;
     } 
-
 }
 .navegacion-principal a {
     color: var(--blanco);
@@ -127,4 +126,13 @@ h1,h2,h3{
     display: flex;
     align-items: flex-end;
 }
-
+/* Servicios */
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 1fr es una fraccion */
+        /*grid-template-columns: 1fr 1fr 1fr; lo mismo diferente forma
+        grid-template-columns: 33.3% 33.3% 33.3%; lo mismo diferente forma */
+        column-gap: 1rem;
+    }
+}  
