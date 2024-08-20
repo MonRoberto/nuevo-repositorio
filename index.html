@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Roberto Quiroz<span>Freelancer</span></h1>
+        <h1 class="titulo">Roberto Quiroz <span>Freelancer</span></h1>
     </header>
 
     <div class="nav-bg">
@@ -25,15 +25,12 @@
     </div>
     <section class="hero">
         <div class="contenido-hero">
-            <div class="ubicacion">
                 <h2>Diseño y Desarrollo Web <span> Freelancer</span></h2>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-search" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <div class="ubicacion"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#01d0e7" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5" />
-                    <path d="M9 4v13" />
-                    <path d="M15 7v5" />
-                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                    <path d="M20.2 20.2l1.8 1.8" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                   </svg>
                   <p>Guadalajara, Jalisco</p>
             </div>
@@ -43,7 +40,7 @@
     <main class="contenedor sombra">
         <h2>Mis Servicios</h2>
         <div class="servicios">
-            <section>
+            <section class="servicio">
                 <h3>Diseño Web</h3>
                     <div class="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -56,7 +53,7 @@
                     </div>
                     <p> Pellentesque odio ex, bibendum quis convallis scelerisque, eleifend vitae lectus. Quisque in erat justo. </p>
             </section>
-            <section>
+            <section class="servicio">
                 <h3>Aplicaciones Web</h3>
                     <div class="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -78,7 +75,7 @@
                     </div>
                     <p> Pellentesque odio ex, bibendum quis convallis scelerisque, eleifend vitae lectus. Quisque in erat justo. </p>
             </section>
-            <section>
+            <section class="servicio">
                 <h3>E-Commerce</h3>
                     <div class="iconos">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -92,34 +89,40 @@
                     <p> Pellentesque odio ex, bibendum quis convallis scelerisque, eleifend vitae lectus. Quisque in erat justo. </p>
             </section>
         </div> <!-- .servicios -->
-    </main>
-    <section>
-        <h2>Contacto</h2>
-        <form>
-            <fieldset>
-                <legend>Contactános llenando todos los campos</legend>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre">
-                </div>
-                
-                <div>
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="Telefono">
-                </div>
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Email">
-                </div>
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </section>
+    
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Telefono</label>
+                            <input type="tel" placeholder="Telefono">
+                        </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+</main>
+    <footer>
+        <p>Todos los derechos reservados. Roberto Quiroz Garcia</p>
+    </footer>
 </body>
 </html>
